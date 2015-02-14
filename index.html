@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/index.js"></script>
+    <style>
+        *{padding: 0;margin: 0;}
+         html,body{width: 100%;height: 100%;overflow-y: auto;background:url("images/body.png") no-repeat;font-family: "Microsoft YaHei"}
+        .title{width: 100%;height: 150px;background: url("images/title-name.png") no-repeat 50% 50%;}
+		/*.title{width: 600px;height: 40px;background: url("images/title-name.png") no-repeat 0;aligin:center}*/
+        .cont{padding: 0px 20px;}
+        .cont .cont-le,.cont .cont-ri{float: left;}
+        .cont-le{width: 49%;margin-right: 10px;height: 570px;background: url("images/lefBg.png") no-repeat;background-size: 100%}
+        .cont-le-title{height: 80px;background: url("images/letTitle.png") no-repeat;background-size: 100%;padding: 0px 20px;line-height: 65px; }
+        .cont-le-title-text{ background: url("images/title-xian.png") no-repeat 120px 50%;}
+        .cont-le-title-text{color: #fff;font-size: 34px;font-family: "Microsoft YaHei";}
+        .lableA{color: #b9c4cd;margin-left:40px;}
+        .lableB{color: #b9c4cd;margin-left:10px;font-size: 50px;position: relative; top: 5px;color: #c30000;text-shadow: 1px 1px 2px #fff;;}
+        .lef-cont{height: 246px;background: url("images/111_03.png") no-repeat;background-size: 100% 100%;margin: 20px;padding: 10px 7px;;}
+        .lef-contList{height:58px;line-height: 58px;}
+        .lef-contList-le-title div{float: left;color: #fff;text-align: center;font-size: 30px;}
+        .lef-contList-le-title-lef{width: 34%;}
+        .lef-contList-le-title-rig{width:60%;}
+        .lef-contList-click{/*background: url("images/list.png") no-repeat;background-size: 100%;*/}
+        .lef-bottom{font-size: 30px; background: url("images/let-bottom.png") no-repeat;margin: 20px;background-size: 100% 100%;text-align: center;height: 60px; line-height: 60px;  }
+        .text{font-size: 30px;color: #fff;padding: 0px 20px;position: relative;  top: -20px;}
+        .text .lableB{margin: 0px 5px;}
+        .text span{margin: 0px 25px;}
+        .cont-ri .cont-le-title-text{background: url("images/title-xian.png") no-repeat scroll 152px 50% transparent;}
+        .cont-ri ul{padding: 0;margin: 0;padding:0px 20px;color: #b9c4cd;font-size: 30px;list-style-type: none;}
+        .cont-ri ul li{display: inline-block;;}
+        .ui-text-le{text-align: center;width: 12%;}
+        .ui-text-con{text-align: center;width: 45%;}
+        .ui-text-rig{text-align: center;width: 40%}
+		.cont-ri ul {height: 50px;
+		line-height: 50px;}
+ 
+    </style>
+</head>
+<body onload="ready()">
+    <div class="title"></div>
+    <br>
+    <div class="cont">
+        <div class="cont-le">
+            <div class="cont-le-title">
+                <div class="cont-le-title-text">抽奖区<label class="lableA">参与抽奖人数</label><label  class="lableB" id='zrs'>50</label>
+                </div>
+            </div>
+            <div class="lef-cont">
+                <div class="lef-contList">
+                    <div class="lef-contList-le-title">
+                        <div class="lef-contList-le-title-lef">昵称</div>
+                        <div class="lef-contList-le-title-rig">手机号</div>
+                    </div>
+                </div>
+                <div id='demo' style="overflow:hidden;height:174px;position: relative;">
+                <div id='demo1'>
+                <!--div class="lef-contList">
+                    <div class="lef-contList-le-title">
+                        <div class="lef-contList-le-title-lef">lisa</div>
+                        <div class="lef-contList-le-title-rig">186*****525</div>
+                    </div>
+                </div>
+                </div-->
+                </div>
+                <div id="demo2" style="height: 0px;"></div>
+                </div>
+            </div>
+            <div class="lef-bottom" onclick="btActionClicked()" id="btAction">开始抽奖 </div>
+            <div class="text">
+                <p>第<label class="lableB" id='labelB'>1</label>次抽奖</p>
+                <p>获得者:<label id='resultName'></label><span>手机号:<label id='resultPhone'>***********</label></span></p>
+            </div>
+        </div>
+        <div class="cont-le cont-ri" id='content'>
+            <div class="cont-le-title">
+                <div class="cont-le-title-text">获奖名单<label class="lableA">获奖人数</label><label  class="lableB">3</label></div>
+            </div>
+            <ul>
+                <li class="ui-text-le">序号</li>
+                <li class="ui-text-con">获得者</li>
+                <li class="ui-text-rig">手机号</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

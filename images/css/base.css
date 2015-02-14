@@ -1,0 +1,42 @@
+#gundongkuang{
+	background:url('../8_16.png') no-repeat;	
+	width:650px;
+	height:210px;
+	background-size:contain;
+	margin-left:25px;
+	aligin:center;
+}
+#buttonAction{
+	background:url('../4_14.png') no-repeat;	
+	width:580px;
+	height:80px;
+	background-size:contain;
+	margin-left:25px;
+	margin-top:25px;
+	aligin:center;
+}
+.resultLeft{
+	font-size:30px;
+	font-weight:bold;
+	font-family:"微软雅黑,宋体";
+	color:white;
+	margin-left:25px;
+}
+#gaoliangkuang{
+	background:url('../5_14.png') no-repeat;
+	width:570px;
+	height:50px;
+	margin-left:5px;
+}
+#demo{
+	font-size:45px;
+	font-weight:bold;
+	color:white;
+	width:600px;
+	height:200px;
+	margin-left:25px;
+	}
+#demo li{
+	list-style-type:none;
+	}
+	
